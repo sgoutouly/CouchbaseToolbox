@@ -1,0 +1,3 @@
+# CouchbaseToolbox
+
+Some utilities in order to handle easily and quickly the couchbase sdk : reading, querying, indexing and so on ...
