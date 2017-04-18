@@ -85,7 +85,7 @@ public class N1QL {
 
 		@Override
 		public SyncQuery queryEntity(Class<?> entity, String... fields) {
-			final String q = fieldsArrayToString(fields);
+			final String q = fields == null ? "*" : fieldsArrayToString(fields);
 			return query("select " + q + " from %bucket% where `_class` =\"" + entity.getName() + "\"");
 		}
 		
